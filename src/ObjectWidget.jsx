@@ -12,6 +12,7 @@ const ObjectWidget = props => {
     fieldName,
     required,
   } = props;
+  console.log(theme);
   return (
     <FormGroup>
       {schema.title && <Typography variant="h3">{require(required)(schema.title)}</Typography>}
